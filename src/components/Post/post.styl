@@ -1,0 +1,31 @@
+@import "~/styles/vars"
+
+.blog-post
+  width: 50%
+  padding: 5%
+  line-height: 1.5
+  cursor: pointer
+
+  &:hover
+    background: $post-bg-hovered
+
+  &-title
+    font-family: Oswald, sans-serif
+    font-size: 1.4em
+    color: $post-title-color
+    text-transform: uppercase
+
+  &-category
+    display: inline-block
+    margin: 0.3em 0.5em 0.3em 0
+    padding: 0.5em 0.8em
+    background: $post-category-bg
+    font-size: 0.7em
+    color: $post-category-color
+    text-transform: uppercase
+
+  &-excerpt
+    font-weight: 300
+
+  @media (max-width: 500px)
+    width: 100%
